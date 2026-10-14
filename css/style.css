@@ -101,3 +101,159 @@ main {
     color: #00B894;
     margin-bottom: 16px;
 }
+
+.imc-page,
+.tool-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.imc-main,
+.tool-main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+}
+
+.imc-container,
+.tool-card {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 65px 42px;
+    background-color: #fff;
+    border: 1px solid #d1d5d8;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.imc-title,
+.tool-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 34px;
+    color: #111;
+}
+
+.imc-title h1,
+.tool-title h1 {
+    font-size: 22px;
+}
+
+.imc-title i,
+.tool-title i {
+    font-size: 20px;
+    color: #111;
+}
+
+.imc-form,
+.tool-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 42px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 10px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(0.95);
+}
+
+.btn-calculate {
+    background-color: #60b99d;
+}
+
+.btn-back {
+    background-color: #aaa;
+}
+
+.tool-result {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.water-goal,
+.water-total {
+    text-align: center;
+}
+
+.water-goal {
+    margin-bottom: 20px;
+}
+
+.water-actions {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.water-actions .btn {
+    width: 45%;
+}
+
+.water-add {
+    background-color: #4b82e8;
+}
+
+.water-reset {
+    background-color: #cf413b;
+}
+
+.water-progress {
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: #60b99d;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+.water-total {
+    margin-bottom: 16px;
+}

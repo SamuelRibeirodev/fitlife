@@ -1,95 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitlife - IMC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
 
-<body style="font-family: Poppins;">
+<body class="imc-page">
 
-    <body>
-        <h1>Calculadora de IMC</h1>
+    <nav>
+        <a href="../index.html" id="logo">
 
-        <a href="../index.html">Pagina inicial</a>
+            <i class="fas fa-heartbeat"></i>
+            Fitlife</a>
 
-        <nav>
+        <ul class="nav-links">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+            <li><a class="nav-link active" href="./imc.html">IMC</a></li>
+            <li><a class="nav-link" href="./tmb.html">TMB</a></li>
+            <li><a class="nav-link" href="./water.html">Água</a></li>
+        </ul>
+    </nav>
 
-            <a href="../index.html">Fitlife</a>
+    <main class="imc-main">
+        <section class="imc-container">
+            <div class="imc-title">
+                <i class="fas fa-weight"></i>
+                <h1>Cálculo de IMC</h1>
+            </div>
 
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="/pages/imc.html">IMC</a></li>
-                <li><a href="/pages/tmb.html">TMB</a></li>
-                <li><a href="/pages/water.html">Água</a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <section>
-                <h3>IMC</h3>
-                <p>Em breve você poderá calcular seu IMC aqui</p>
-                
-                <form action="">
-
-                    <div>
-                        <label for="weight">Peso (kg)</label>
-                        <input type="number" placeholder="Ex: 70" id="weight">
-                    </div>
-
-                    <div>
-                        <label for="height">Altura (m)</label>
-                        <input type="number" placeholder="Ex: 1.70" id="height">
-                    </div>
-
-                    <button>Calcular</button>
-                    
-                </form>
-
-                <div>
-
-                    <p>Seu IMC é:</p>
-                    <p>00.0</p>
-                    <p>Classificação</p>
-
+            <form class="imc-form">
+                <div class="form-group">
+                    <label for="weight">Peso (kg)</label>
+                    <input type="number" placeholder="Ex: 70" id="weight">
                 </div>
 
-                <!-- <form action="">
+                <div class="form-group">
+                    <label for="height">Altura (m)</label>
+                    <input type="number" placeholder="Ex: 1.70" id="height">
+                </div>
 
-                    <label for="user-input">Digite seu nome:</label>
-                    <input type="text" placeholder="Digite seu nome" id="user-input">
-
-                    <label for="course-input">Selecione o curso desejado:</label>
-                    <select name="course-input" id="course-input">
-
-                        <option value=""></option>
-                        <option value="ads">Analise e desenvolvimento de sistema</option>
-                        <option value="es">Engenharia de software</option>
-                        <option value="adm">Administração</option>
-                        <option value="ci">Ciencia da computação</option>
-
-                    </select>
-
-                    <button type="submit">Enviar</button>
-
-                </form> -->
-
-                <a href="../index.html">Voltar</a>
-            </section>
-        </main>
-
-         <footer>
-
-            <p>&copy;2026 Fitlife -Fiap</p>
-
-         </footer>
-
-    </body>
+                <div class="form-actions">
+                    <button class="btn btn-calculate" type="button" id="calculate-btn">Calcular</button>
+                    <a class="btn btn-back" href="../index.html">Voltar</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
 
 </html>
