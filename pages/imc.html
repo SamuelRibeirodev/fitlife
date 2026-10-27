@@ -1,61 +1,64 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitlife - IMC</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <title>FitLife - Imc</title>
 </head>
 
-<body class="imc-page">
+<body>
+  <nav>
+    <a href="../index.html" id="logo">
+      <i class="fas fa-heartbeat"></i>
+      FitLife
+    </a>
 
-    <nav>
-        <a href="../index.html" id="logo">
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="./imc.html" class="nav-link active">IMC</a></li>
+      <li><a href="./tmb.html" class="nav-link">TMB</a></li>
+      <li><a href="./water.html" class="nav-link">Água</a></li>
+    </ul>
+  </nav>
 
-            <i class="fas fa-heartbeat"></i>
-            Fitlife</a>
+  <main>
+    <section class="tool-container">
+      <div class="tool-container-title">
+        <h2><i class="fas fa-weight"></i> Cálculo de IMC</h2>
+      </div>
 
-        <ul class="nav-links">
-            <li><a class="nav-link" href="../index.html">Home</a></li>
-            <li><a class="nav-link active" href="./imc.html">IMC</a></li>
-            <li><a class="nav-link" href="./tmb.html">TMB</a></li>
-            <li><a class="nav-link" href="./water.html">Água</a></li>
-        </ul>
-    </nav>
+      <form action="">
+        <div class="form-group">
+          <label for="weight">Peso (kg)</label>
+          <input type="number" placeholder="Ex: 70" id="weight" />
+        </div>
 
-    <main class="imc-main">
-        <section class="imc-container">
-            <div class="imc-title">
-                <i class="fas fa-weight"></i>
-                <h1>Cálculo de IMC</h1>
-            </div>
+        <div class="form-group">
+          <label for="height">Altura (m)</label>
+          <input type="number" placeholder="Ex: 1.7" id="height" />
+        </div>
 
-            <form class="imc-form">
-                <div class="form-group">
-                    <label for="weight">Peso (kg)</label>
-                    <input type="number" placeholder="Ex: 70" id="weight">
-                </div>
+        <button class="action-btn">Calcular</button>
+        <a class="action-btn btn-back" href="../index.html">Voltar</a>
+      </form>
 
-                <div class="form-group">
-                    <label for="height">Altura (m)</label>
-                    <input type="number" placeholder="Ex: 1.70" id="height">
-                </div>
+      <div class="result-box">
+        <p>Seu IMC é:</p>
+        <p>00.0</p>
+        <p>Classificação</p>
+      </div>
 
-                <div class="form-actions">
-                    <button class="btn btn-calculate" type="button" id="calculate-btn">Calcular</button>
-                    <a class="btn btn-back" href="../index.html">Voltar</a>
-                </div>
-            </form>
-        </section>
-    </main>
+    </section>
+  </main>
+
 </body>
 
 </html>
